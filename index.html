@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/fontawesome-free-5.13.0-web/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="main-div">
+        <h1>Loan Calculator</h1>
+        <form action="">
+          <div class="row">
+            <label for="principal"><i class="fas fa-rupee-sign"></i></label>
+            <input
+              class="parameters"
+              id="principal"
+              placeholder="Loan Amount"
+              type="number"
+              pattern="[0-9]"
+              amount
+            />
+          </div>
+          <div class="row">
+            <label for="interest"><i class="fas fa-percentage"></i></label>
+            <input
+              class="parameters"
+              id="interest"
+              placeholder="Annual Interest"
+              type="number"
+              interest
+            />
+          </div>
+          <div class="row">
+            <label for="time"><i class="fas fa-hourglass-start"></i></label>
+            <input
+              
+              class="parameters"
+              id="time"
+              placeholder="Repayment Years"
+              type="number"
+              time
+            />
+          </div>
+          <div class="row">
+            <button type="submit" id="calculate" class="parameters">
+              Calculate
+            </button>
+          </div>
+        </form>
+        <div class="results">
+          <h3>Results</h3>
+          <div class="row">
+            <label for="monthly" class="results-label">Monthly Payment </label>
+            <input type="text" monthly id="monthly" />
+          </div>
+          <div class="row">
+            <label for="total-payment" class="results-label"
+              >Total Payment
+            </label>
+            <input type="text" total id="total-payment" />
+          </div>
+
+          
+          <div class="row">
+            <label for="total-interest" class="results-label"
+              >Total Interest
+            </label>
+            <input type="text" total-interest id="total-interest" />
+          </div>
+        
+      </div>
+    </section>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

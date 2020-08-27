@@ -1,0 +1,132 @@
+/* font-family: 'Open Sans', sans-serif;(light)
+font-family: 'Roboto', sans-serif; (bold)*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+body {
+  background-color: #333;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 90vh;
+}
+.main-div {
+  background-color: white;
+  width: 90%;
+  padding: 1em 0 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50ch;
+}
+
+.main-div > h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 0.7em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+input {
+  border: 1px solid #b7b6b6;
+  width: 100%;
+  padding-left: 1em;
+}
+input:focus {
+  outline: none;
+}
+
+label {
+  border: 1px solid #b7b6b6;
+  border-right: none;
+  padding: 0.5em 0.7em;
+  background-color: #cccccc;
+}
+
+.row + .row {
+  margin-top: 0.6em;
+}
+
+button {
+  height: 32px;
+  width: 100%;
+  margin-top: 0.2em;
+  color: white;
+  background-color: #333;
+  border: 1px solid #333;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+i {
+  color: #484545;
+}
+
+.results {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.8em;
+}
+.results > h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.results > div.row {
+  margin-top: 0.8em;
+}
+.results {
+  display: none;
+}
+
+.results-label {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+
+  width: 270px;
+  padding: 0.3rem 0.2rem;
+}
+
+.error-div {
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgb(236, 190, 190);
+  border: 1px solid rgb(236, 190, 190);
+  color: rgb(187, 16, 16);
+  margin-bottom: 0.4em;
+  width: 90%;
+  padding: 0.3em;
+
+  font-family: "Roboto", sans-serif;
+}
