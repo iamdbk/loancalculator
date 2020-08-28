@@ -55,7 +55,7 @@ form.addEventListener("submit", function (e) {
     const totalInterest = document.querySelector("[total-interest]");
     e.preventDefault();
     let SI = (p * r * t) / 100;
-    monthlyPayment.value = `₹${((SI + Number(p)) / 12).toFixed(2)}`;
+    monthlyPayment.value = `₹${((SI + Number(p)) / (t * 12)).toFixed(2)}`;
     totalPayment.value = `₹${(SI + Number(p)).toFixed(2)}`;
     totalInterest.value = `₹${SI.toFixed(2)}`;
   }
